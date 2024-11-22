@@ -12,34 +12,28 @@
         android:id="@+id/pagesTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="220dp"
-        android:layout_marginBottom="632dp"
+        android:layout_marginBottom="664dp"
         android:text="Количество страниц"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <EditText
-        android:id="@+id/pagesEditText"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:hint="количество"
-        android:inputType="number"
-        app:layout_constraintTop_toBottomOf="@+id/pagesTextView"
-        app:layout_constraintStart_toStartOf="@+id/pagesTextView"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.862"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.071" />
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <RadioGroup
         android:id="@+id/formatRadioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="4dp"
         app:layout_constraintStart_toStartOf="@+id/pagesTextView"
         app:layout_constraintTop_toBottomOf="@+id/pagesTextView">
+
+        <EditText
+            android:id="@+id/pagesEditText"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="количество"
+            android:inputType="number" />
 
         <RadioButton
             android:id="@+id/a4RadioButton"
@@ -73,14 +67,15 @@
             app:layout_constraintHorizontal_bias="0.22"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/a3RadioButton" />
+
     </RadioGroup>
 
     <Button
         android:id="@+id/calculateButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="228dp"
-        android:layout_marginBottom="296dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="280dp"
         android:text="ОК"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
